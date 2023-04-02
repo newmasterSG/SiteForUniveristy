@@ -1,0 +1,15 @@
+main{
+    background-color: green;
+}
+
+.conteinerFull{
+    display: flex;
+}
+
+.Column1{
+    flex-direction: column;
+}
+
+button{
+    background-color: green;
+}

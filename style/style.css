@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3aaf46ee;
+}
+
+main{
+  display: flex;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3aaf46ee;
+}
+
+.iconbutton{
+  background-color:#3aaf46c9;
+}
+
+.btnwithicon{
+  background-color:#3aaf46c9;
+}
+
+.btmCatalog{
+  background-color:#3aaf46c9;
+  width: 100px;
+  height: 50px;
+}
+
+.btnLogin{
+  background-color:#3aaf46c9;
+  width: 100px;
+  height: 50px;
+}
+
+form {
+  width:400px;
+  margin:auto;
+  }
+  input{
+  padding:4px 10px;
+  border:0;
+  font-size:16px;
+  }
+  .search {
+  width: 75%;
+  background-color: #319b3c;
+  color:#ffffff;
+  }
+  .submit{
+  width: 70px;
+  background-color: rgb(7, 73, 7);
+  color:#ffffff;
+  }
+
+  a{
+    color: white;
+  }
+  
+  #Contact{
+    background-color: #319b3c;
+    color: white;
+  }
+
+  #PhoneNumber{
+    background-color: #319b3c;
+    color: white;
+  }
+  
+  .chooseCategories li{
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  .goods{
+    display: flex;
+  }
+  
+  .conteinerGoods{
+    flex-direction: column;
+    width: 50%;
+  }
