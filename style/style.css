@@ -3,88 +3,183 @@ html, body {
     padding: 0;
   }
 
-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #3aaf46ee;
-}
-
-main{
-  display: flex;
-}
-
-footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #3aaf46ee;
-}
-
-.iconbutton{
-  background-color:#3aaf46c9;
-}
-
-.btnwithicon{
-  background-color:#3aaf46c9;
-}
-
-.btmCatalog{
-  background-color:#3aaf46c9;
-  width: 100px;
-  height: 50px;
-}
-
-.btnLogin{
-  background-color:#3aaf46c9;
-  width: 100px;
-  height: 50px;
-}
-
-form {
-  width:400px;
-  margin:auto;
+  header{
+    background-color: #3aaf46ee;
+    display: inline-block;
   }
-  input{
-  padding:4px 10px;
-  border:0;
-  font-size:16px;
+  
+  .btnwithicon{
+    background-color:#3aaf46c9;
   }
-  .search {
-  width: 75%;
-  background-color: #319b3c;
-  color:#ffffff;
+
+  footer{
+    background-color: #3aaf46ee;
   }
+  
+  .btmCatalog{
+    background-color:#3aaf46c9;
+  }
+  
+  .btnLogin{
+    background-color:#3aaf46c9;
+  }
+
   .submit{
-  width: 70px;
-  background-color: rgb(7, 73, 7);
-  color:#ffffff;
+    background-color: rgb(7, 73, 7);
+    color:#ffffff;
+    }
+
+
+  .search {
+    background-color: #319b3c;
+    color:#ffffff;
+    }
+
+    a{
+      color: white;
+    }
+
+    #Contact{
+      background-color: #319b3c;
+      color: white;
+    }
+  
+    #PhoneNumber{
+      background-color: #319b3c;
+      color: white;
+    }
+
+    #nav-icon1 {
+      width: 60px;
+      height: 45px;
+      position: relative;
+      margin: 30px auto;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+  }
+  #nav-icon1 span {
+      display: block;
+      position: absolute;
+      height: 9px;
+      width: 100%;
+      background: #337AB7;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+  }
+  #nav-icon1 span:nth-child(1) {
+      top: 0px;
+  }
+  #nav-icon1 span:nth-child(2) {
+      top: 18px;
+  }
+  #nav-icon1 span:nth-child(3) {
+      top: 36px;
+  }
+  #nav-icon1.open span:nth-child(1) {
+      top: 18px;
+      transform: rotate(135deg);
+  }
+  #nav-icon1.open span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+  }
+  #nav-icon1.open span:nth-child(3) {
+      top: 18px;
+      transform: rotate(-135deg);
   }
 
-  a{
-    color: white;
+
+@media (min-width: 600px) {
+  header{
+    display: flex;
+    align-items: center;
   }
   
-  #Contact{
-    background-color: #319b3c;
-    color: white;
-  }
-
-  #PhoneNumber{
-    background-color: #319b3c;
-    color: white;
-  }
-  
-  .chooseCategories li{
-    text-align: justify;
-    margin-right: 20px;
-  }
-
-  .goods{
+  main{
     display: flex;
   }
   
-  .conteinerGoods{
-    flex-direction: column;
-    width: 50%;
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .btmCatalog{
+    width: 100px;
+    height: 50px;
+  }
+  
+  .btnLogin{
+    width: 100px;
+    height: 50px;
+  }
+  
+  form {
+    width:400px;
+    margin:auto;
+    }
+    
+    input{
+    padding:4px 10px;
+    border:0;
+    font-size:16px;
+    }
+    .search {
+    width: 75%;
+    }
+    .submit{
+    width: 70px;
+    }
+   
+    .chooseCategories li{
+      text-align: justify;
+      margin-right: 20px;
+    }
+  
+    .goods{
+      display: flex;
+    }
+    
+    .conteinerGoods{
+      flex-direction: column;
+      width: 50%;
+    }
+}
+
+  @media (max-width: 600px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btmCatalog {
+      display: none;
+    }
+  
+    .searchContainer {
+      margin-top: 10px;
+    }
+  
+    .search {
+      width: 80%;
+    }
+  
+    .submit {
+      width: 18%;
+    }
+  
+    .shoping.bag {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+  
+    .chooseCategories {
+      display: none;
+    }
   }
